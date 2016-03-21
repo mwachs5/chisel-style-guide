@@ -70,6 +70,8 @@ Or trait (if you want a Module or Bundle to extend the trait):
     {
        val RD_MSB  = 11
        val RD_LSB  = 7
+       val nCMD = 3
+       val cCMD_INIT :: cCMD_READ :: cCMD_WRITE :: Nil = Enum(UInt(), nCMD)
     }
 ````
 
