@@ -359,6 +359,7 @@ Consider commenting the use of the I/O fields (especially if there are unintuiti
 
 If it required cleverness to write, you should probably describe **why** it does what it does. The reader is never as smart as the writer. Especially when it’s yourself.
 
+
 ##Assertions
 
 If you solve a bug, strongly contemplate what `assert()` could have caught this bug and then add it.
@@ -377,7 +378,11 @@ Use `require()` statements to guard against unsupported parameter values in your
 
 Use `require()` statements to codify your assumptions in your code (e.g., `require(isPow2(num_entries))` for logic that only works when `num_entries` is a power of 2).
 
+## Documentation
 
+Consider using Scala's suggested sytle for documenting your packages, classes, objects, etc:
+
+http://docs.scala-lang.org/style/scaladoc.html
 
 ##Additional Best Practices
 
